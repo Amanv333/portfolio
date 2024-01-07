@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav class="bg-gray-800 text-white p-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <div class="text-2xl font-semibold">Aman Verma</div>
+      <ul class="flex space-x-4">
+        <li><a href="#home" class="hover:text-gray-300">Home</a></li>
+        <li><a href="#projects" class="hover:text-gray-300">Projects</a></li>
+        <li><a href="#skills" class="hover:text-gray-300">Skills</a></li>
+        <li><a href="#education" class="hover:text-gray-300">Education</a></li>
+        <li><a href="#experience" class="hover:text-gray-300">Experience</a></li>
+        <li><a href="#contact" class="hover:text-gray-300">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section id="home" class="py-16 bg-gray-100">
+    <div class="container mx-auto text-center">
+      <h1 class="text-4xl font-semibold">Hello, I'm Aman Verma</h1>
+      <p class="mt-4 text-gray-600">Fresher Software Engineer</p>
+    </div>
+  </section>
+  <section id="summary" class="py-16">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-semibold">Summary</h2>
+      <p class="mt-4 text-gray-600">
+        Enthusiastic and motivated fresher software engineer with a passion for web development and a strong foundation in programming languages such as Java and JavaScript. Eager to contribute technical skills, creativity, and a quick learning ability to a dynamic development team.
+      </p>
+    </div>
+  </section>
+
+  <section id="projects" class="py-16">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-semibold">Projects</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
+        <!-- Project cards go here -->
+          <!-- Project 1 -->
+          <div class="bg-white p-4 shadow-md rounded-md">
+            <h3 class="text-xl font-semibold mb-2">Project 1: Web Development Portfolio</h3>
+            <p>A personal portfolio website showcasing skills, projects, and contact information. Built using HTML, CSS, and JavaScript.</p>
+          </div>
+  
+          <!-- Project 2 -->
+          <div class="bg-white p-4 shadow-md rounded-md">
+            <h3 class="text-xl font-semibold mb-2">
+              <a href="your_link_url_here">Project 2: Registration App with Spring Boot</a>
+          </h3>
+          
+            <p>*Captured user information including name, email, address, and mobile through an intuitive interface; streamlined data collection process,reducing user input time by 40%</p>
+            <p>*System utilizes the user's email  to send a welcome email to their inbox..</p>
+          </div>
+        <!-- ... -->
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="py-16 bg-gray-100">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-semibold">Skills</h2>
+      <div class="mt-8">
+        <h3 class="text-xl font-semibold mb-4">Technical Skills</h3>
+        <ul class="list-disc list-inside">
+          <li>Programming Languages: Java, JavaScript</li>
+          <li>Web Technologies: HTML, CSS, Angular, Jsp Servlets, API</li>
+          <li>Database: MongoDB, MySQL</li>
+          <li>Framework: Spring Boot, Hibernate</li>
+          <li>Version Control: Git</li>
+          <!-- Add more skills as needed -->
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="education" class="py-16">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-semibold">Education</h2>
+      <div class="mt-8">
+        <h3 class="text-xl font-semibold mb-2">Bachelor's Degree in Computer Science</h3>
+        <p class="text-gray-600">Babu Banarasi Das National Institute of Technology and Management, 2023</p>
+      </div>
+      <!-- Add more education entries as needed -->
+    </div>
+  </section>
+
+  <section id="experience" class="py-16 bg-gray-100">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-semibold">Experience</h2>
+      <div class="mt-8">
+        <h3 class="text-xl font-semibold mb-2">Software Engineer Intern</h3>
+        <p class="text-gray-600">PSA Infotech, Aug 2023 - present</p>
+        <p class="mt-2">Description of your experience as a Software Engineer Intern.</p>
+      </div>
+      <!-- Add more experience entries as needed -->
+    </div>
+  </section>
+
+ 
+        <!-- Contact form fields go here -->
+        <!-- ... (previous code) ... -->
+
+  <section id="contact" class="py-16">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-semibold">Contact Me</h2>
+      <form id="contact-form" class="mt-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <input type="text" id="name" name="name" placeholder="Your Name" class="p-3 rounded-md border border-gray-300" required>
+          <input type="email" id="email" name="email" placeholder="Your Email" class="p-3 rounded-md border border-gray-300" required>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
+          <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" class="p-3 rounded-md border border-gray-300">
+          <input type="text" id="subject" name="subject" placeholder="Subject" class="p-3 rounded-md border border-gray-300" required>
+        </div>
+        <textarea id="message" name="message" rows="4" placeholder="Your Message" class="mt-4 p-3 rounded-md border border-gray-300" required></textarea>
+        <button type="submit" class="mt-4 bg-blue-500 text-white p-3 rounded-md">Submit</button>
+      </form>
+    </div>
+  </section>
+
+<!-- ... (remaining code) ... -->
+
+
+
+<!-- ... (previous code) ... -->
+
+<footer class="bg-gray-800 text-white py-4 text-center">
+    <div class="container mx-auto">
+      <p class="mb-2">&copy; 2023 Your Portfolio. All rights reserved.</p>
+      <div class="flex justify-center space-x-4">
+        <a href="#" class="hover:text-gray-300">GitHub</a>
+        <a href="#" class="hover:text-gray-300">LinkedIn</a>
+        <a href="#" class="hover:text-gray-300">Twitter</a>
+        <!-- Add more social media links as needed -->
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
